@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+	<script language="JavaScript" type="Text/JavaScript">
+//Made by 1st JavaScript Editor
+//http://www.yaldex.com
+//Come and get more (free) products
+
+
+function fifteenth(sixteenth) {this.length = sixteenth;
+for (var seventeenth = 1; seventeenth <= sixteenth; seventeenth++)this[seventeenth] = seventeenth - 1;this[11] = 'A';this[12] = 'B';this[13] = 'C';this[14] = 'D';this[15] = 'E';this[16] = 'F';return this;}third2 = new fifteenth(16);
+function eighteenth(nineteenth) {
+if (nineteenth < 17) nineteenth = 16;var twentieth = nineteenth / 16;var first2 = twentieth+'';first2 = first2.substring(0, 2);twentieth = parseInt(first2, 10);var second2 = third2[twentieth + 1];var fifth2 = nineteenth - twentieth * 16;
+if (fifth2 < 1) fifth2 = 1;first2 = fifth2 + '';first2 = first2.substring(0, 2);fifth2 = parseInt(first2, 10);var sixth2 = third2[fifth2 + 1];var sixteenth2 = second2 + '' + sixth2;return sixteenth2;}
+function fifteenth2(seventeenth2) {seventeenth2 = seventeenth2.substring(0, seventeenth2.length);seventh2 = 255;eighth2 = seventh2 / seventeenth2.length;
+for(var seventeenth = 0; seventeenth < seventeenth2.length; seventeenth++) {seventh2 = 255*Math.sin(seventeenth / (seventeenth2.length / 3));eleventh2 = eighteenth(seventh2);twelfth2 = eighth2 * seventeenth;fourteenth2 = eighteenth(twelfth2);thirteenth2 = seventeenth2.length;eighteenth2 = thirteenth2 - seventeenth;
+if (eighteenth2 < 0) eighteenth2 = 0;nineteenth2 = eighth2 * eighteenth2;twentieth2 = eighteenth(nineteenth2);
+document.write('<FONT COLOR=\'#' + twentieth2 + eleventh2 + fourteenth2 + '\'>' + seventeenth2.substring(seventeenth, seventeenth + 1) + '</FONT>');}}fifteenth2('花里胡哨之页');
+</script>
+<script>
+var yourtext="这是朱泓瑾的第三次实验";
+var messLength=yourtext.length;
+var initcolor="#33d09f";
+var yourcolor="#6f4de0";
+var speed=150;
+var i;
+var j=0;
+document.write("<h1><font color='"+initcolor+"'>");
+	for (i=0;i<messLength;i++){
+document.write("<span id='yourid"+i+"'>"+yourtext.charAt(i)+"</span>");	}document.write("</font></h1>");
+function colorit(){var idd="yourid"+j;	
+if (j<messLength){
+document.getElementById(idd).style.color=yourcolor;j++}	
+else {j=0;		
+for (i=0;i<messLength;i++){		
+var newidd="yourid"+i;		
+document.getElementById(newidd).style.color=initcolor;		}	}	}
+function doit(){timer=setInterval("colorit()",speed)}
+window.onload=doit;
+</script>
+
+
+
+<title></title>
+
+</head>
+
+<body>
+
+</body>
+	</html>
