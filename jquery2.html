@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		p{
+			color: aliceblue
+		}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+            $("p").animate({
+      left:'250px',
+      opacity:'0.5',
+      height:'150px',
+      width:'150px'
+    });});
+	})
+					  </script>
+</head>
+
+<body background="川菜2.jpg">
+	<p style="color：white"><b>欢迎来到川菜的世界</b></p>
+	<button>开始动画</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+$(".flip").click(function(){
+    $(".panel").slideToggle("slow");
+  });
+});
+</script>
+	<style type="text/css"> 
+div.panel,p.flip
+{
+margin:0px;
+padding:5px;
+text-align:center;
+background:#1DF3AB;
+border:solid 1px #c3c3c3;
+}
+div.panel
+{
+height:120px;
+display:none;
+}
+</style>
+</head>
+
+<body background="1.jpg">
+	<div class="panel">
+<p>网页设计永远的神</p>
+<p>冲呀</p>
+</div>
+ 
+<p class="flip">请点击这里</p>
+</body>
+</html>
