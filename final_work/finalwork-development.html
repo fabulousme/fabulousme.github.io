@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>巴蜀味道</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../eCommerceStyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+    background-color: hsla(26,85%,56%,1);
+}
+
+	/* 轮换图制作 */
+.focus{
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+ul.slides{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: none;
+    background-color: #eee;
+    overflow: hidden;
+}
+li.slide{
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top:0px;
+    left: 0px;
+	display: flex;
+    transition: .5s transform ease-in-out;
+}
+.slide:nth-of-type(1){
+    background-image: url("develop2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 800px 500px;
+}
+.slide:nth-of-type(2){
+    background-image: url("develop3.jpeg");
+    background-repeat: no-repeat;
+    left: 100%;
+    background-size: 800px 500px;
+}
+.slide:nth-of-type(3){
+    background-image: url("develop1.jpeg");
+    background-repeat: no-repeat;
+    left: 200%;
+    background-size: 800px 500px;
+}
+
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+.controls-visible label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+.slides input[type="radio"]:nth-of-type(1):checked~
+.controls-visible label:nth-of-type(1){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(2):checked~
+.controls-visible label:nth-of-type(2){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(3):checked~
+.controls-visible label:nth-of-type(3){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(1):checked~.slide{
+		transform:translatex(0%);
+}
+.slides input[type="radio"]:nth-of-type(2):checked~.slide{
+		transform:translatex(-100%);
+}
+.slides input[type="radio"]:nth-of-type(3):checked~.slide{
+		transform:translatex(-200%);
+}
+	a:link {
+    text-decoration: none;
+    color: hsla(0,0%,100%,1);
+}
+a:visited {
+    text-decoration: none;
+    color: hsla(0,0%,100%,1);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgba(39,53,236,1);
+}
+a:active {
+    text-decoration: none;
+}
+#mainWrapper #content .sidebar {
+    height: 1225px;
+}
+</style>
+</head>
+
+<body>
+<div id="mainWrapper">
+  <header> 
+    <div class="head" id="name">
+      <div class="back" id="toindex"><a href="finalwork-index.html">返回首页</a></div>
+    巴蜀味道</div>
+  </header>
+ 
+<div id="content">
+    <section class="sidebar"> 
+      <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
+      <div id="menubar">
+        <nav class="menu">
+          <h2 style="font-size: 36px">传承发扬</h2>
+          
+        </nav>
+        
+      </div>
+    </section>
+    <section class="mainContent">
+      <div class="introduction" id="con">
+		  <!-- 轮换图制作 start -->
+        <div class="focus">
+            <ul class="slides">
+                <input type="radio" id="control-1" name="control" checked>
+                <input type="radio" id="control-2" name="control">
+                <input type="radio" id="control-3" name="control">
+
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+
+                <div class="controls-visible">
+                    <label for="control-1"></label>
+                    <label for="control-2"></label>
+                    <label for="control-3"></label>
+                </div>
+            </ul>
+        </div>
+        <!-- 轮换图制作 end -->
+	    <div class="text" id="txt">
+	      <p>川菜博物馆作为成都的一张旅游名片，是一座可以吃的博物馆，是世界唯一以菜系文化为陈列内容的主题博物馆。博物馆内分典藏馆、互动演示馆、品茗休闲馆、灶王祠、川菜原料展示区、川菜原料加工工具展示区等。</p>
+	      <p>&nbsp;</p>
+	      <p>成都川菜博物馆以继承川菜文化传统、弘扬四川美食为宗旨，禀承美食面前有食无类的理念，为美食王国的无国界公民打造川菜文化传播平台。馆内拥有价值400万人民币的泡菜坛、全国最大的灶王祠、世界上最好的氨氮含量超过国家出品26倍的手工豆瓣。在双语体验师的专业带领讲解下，游客将感受一回穿越时空的美妙的川菜文化之旅。</p>
+	      <p>&nbsp;</p>
+	      <p>在互动演示馆，游客将由体验师指导，亲手制作几道经典川菜菜品。我馆首席烹饪师作为《川菜》杂志的封面人物，曾为世界500强总经理讲授川菜文化、传授传统川菜的烹饪技艺。游客将全方位感受川菜刀功、火候及成菜过程，感受川菜炒菜不过油、不换锅，芡汁现炒现兑，急火短炒、一锅成菜的特点，并通过鼻闻口尝，体验川菜的色香味形器以及一菜一格，百菜百味、五味调和，百味生香的丰富内涵。</p>
+	      <p>&nbsp;</p>
+	      <p>成都川菜博物馆位于四川省成都市郫县古城镇，在成都市西郊，为国家AAA级旅游景区、国家三级博物馆。</p>
+	      <p>&nbsp;</p>
+	      <p>成都川菜博物馆是世界唯一以菜系文化为陈列内容的活态主题博物馆，包含了四川本土文化的重要部分：川菜、川酒、川茶、川戏、川派建筑、川式园林……景区占地约40亩，藏品6000余件，川西民居建筑构成新派古典园林风光。</p>
+	      <p>&nbsp;</p>
+	      <p>成都川菜博物馆旅游资源十分丰富：共有民族文化及其载体、古迹与建筑、人文旅游、旅游购物、休闲娱乐求知五个主类。景区内分为典藏馆、互动演示馆、品茗休闲馆、灶王祠、川菜原料加工工具展示区、川菜原料展示区等。</p>
+	      <p>&nbsp;</p>
+	      <p>成都川菜博物馆常设旅游活动项目：</p>
+	      <p>1、典藏馆赏古：游客可观看博物馆收藏的川菜古董精品。2、互动演示馆互动：游客可观看厨师演示川菜制作技艺，品尝地道川菜，体验川菜制作。3、品茗休闲馆品茶：游客感受四川人的茶文化，了解四川人的休闲状态。4、灶王祠祭祀：每逢成都国际美食旅游节和农历腊月二十三，有祭祀灶王活动（包括傩戏表演、舞狮表演、锣鼓表演、古装祭祀、敬香祈福、抢祭品）。5、传统工艺制作演示：原料展示区现场演示传统工艺（酿制郫县豆瓣、泡泡菜、包粽子、包皮蛋、做月饼等）。</p>
+	      <p>&nbsp;</p>
+	      <p>博物馆本该是活态的，川菜博物馆通过玩做菜这种新颖、参与性强的旅游模式，让我们认识川菜、了解川菜、喜欢川菜——这是一个吃货的终极体验。 </p>
+	    </div>
+      </div>
+    </section>
+  </div>
+  <footer style="font-family: '楷体'; font-style: inherit; font-weight: 900; font-size: large;"> 
+    第八小组
+  </footer>
+</div>
+</body>
+</html>
