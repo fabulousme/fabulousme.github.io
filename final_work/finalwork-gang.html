@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>巴蜀味道</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="eCommerceStyle.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+    background-color: hsla(26,85%,56%,1);
+}
+
+	/* 轮换图制作 */
+.focus{
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+ul.slides{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: none;
+    background-color: #eee;
+    overflow: hidden;
+}
+li.slide{
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top:0px;
+    left: 0px;
+	display: flex;
+    transition: .5s transform ease-in-out;
+}
+.slide:nth-of-type(1){
+    background-image: url("gang3.jpeg");
+    background-repeat: no-repeat;
+    background-size: 800px 500px;
+}
+.slide:nth-of-type(2){
+    background-image: url("gang2.jpg");
+    background-repeat: no-repeat;
+    left: 100%;
+    background-size: 800px 500px;
+}
+.slide:nth-of-type(3){
+    background-image: url("gang1.jpeg" );
+    background-repeat: no-repeat;
+    left: 200%;
+    background-size: 800px 500px;
+}
+
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+.controls-visible label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+.slides input[type="radio"]:nth-of-type(1):checked~
+.controls-visible label:nth-of-type(1){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(2):checked~
+.controls-visible label:nth-of-type(2){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(3):checked~
+.controls-visible label:nth-of-type(3){
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(1):checked~.slide{
+		transform:translatex(0%);
+}
+.slides input[type="radio"]:nth-of-type(2):checked~.slide{
+		transform:translatex(-100%);
+}
+.slides input[type="radio"]:nth-of-type(3):checked~.slide{
+		transform:translatex(-200%);
+}
+#mainWrapper #content .sidebar {
+    height: 525px;
+}
+a:link {
+    text-decoration: none;
+    color: hsla(0,0%,100%,1);
+}
+a:visited {
+    text-decoration: none;
+    color: hsla(0,0%,100%,1);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgba(78,88,226,1);
+}
+a:active {
+    text-decoration: none;
+    color: hsla(0,0%,0%,1);
+}
+</style>
+</head>
+
+<body>
+<div id="mainWrapper">
+  <header> 
+    <div class="head" id="name">
+      <div class="back" id="toindex"><a href="finalwork-index.html">返回首页</a></div>
+    巴蜀味道</div>
+  </header>
+ 
+<div id="content">
+    <section class="sidebar"> 
+      <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
+      <div id="menubar">
+        <nav class="menu">
+          <h2 style="font-size: 36px">派系分流</h2>
+          <hr>
+          <ul>
+            <!-- List of links under menuset 1 -->
+            <li><a href="finalwork-gang3.html" title="Link" style="font-family: '楷体'; font-style: inherit; font-weight: 900; font-size: large;">上河帮</a></li>
+            <li><a href="finalwork-gang1.html" title="Link" style="font-family: '楷体'; font-style: inherit; font-weight: 900; font-size: large;">小河帮</a></li>
+            <li><a href="fianlwork-gang2.html" title="Link" style="font-family: '楷体'; font-style: inherit; font-weight: 900; font-size: large;">下河帮</a></li>
+
+          </ul>
+        </nav>
+        
+      </div>
+    </section>
+    <section class="mainContent">
+      <div class="introduction" id="con">
+		  <!-- 轮换图制作 start -->
+        <div class="focus">
+            <ul class="slides">
+                <input type="radio" id="control-1" name="control" checked>
+                <input type="radio" id="control-2" name="control">
+                <input type="radio" id="control-3" name="control">
+
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+
+                <div class="controls-visible">
+                    <label for="control-1"></label>
+                    <label for="control-2"></label>
+                    <label for="control-3"></label>
+                </div>
+            </ul>
+        </div>
+        <!-- 轮换图制作 end -->
+      </div>
+    </section>
+  </div>
+  <footer style="font-family: '楷体'; font-style: inherit; font-weight: 900; font-size: large;"> 
+    第八小组
+  </footer>
+</div>
+</body>
+</html>
